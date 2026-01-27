@@ -1,5 +1,3 @@
-import 'package:fpdart/fpdart.dart';
-
 sealed class Loadable<D, L> {
   final D data;
 
@@ -27,8 +25,6 @@ sealed class Loadable<D, L> {
       ),
     };
   }
-
-  Option<D> toOption() => isData ? some(data) : none();
 }
 
 final class LInitial<D, L> extends Loadable<D, L> {

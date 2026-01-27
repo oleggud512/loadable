@@ -4,5 +4,6 @@
 library;
 
 export 'src/loadable_base.dart';
+export 'src/fpdart.dart';
 
 // TODO: Export any libraries intended for clients of this package.
