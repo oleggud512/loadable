@@ -10,4 +10,9 @@ extension FpdartEitherExtensions<D, L, E> on Loadable<Either<E, D>, L> {
     LData(:final data) => data.toOption(),
     _ => none(),
   };
+
+  bool get eitherIsData => switch (this) {
+    LData(:final data) => data.isRight(),
+    _ => false,
+  };
 }
